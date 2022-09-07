@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    font-family: 'proxima-nova', sans-serif;
+}
+body{
+    margin: 0;
+}
+.page{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+span{
+    font-size: 14px;
+}
+.name{
+    display: flex;
+    justify-content: center;
+}
+.title{
+    text-transform: uppercase;
+    font-weight: 600px;
+}
+.card{
+    width: 350px;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mac{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-radius: 5px;
+}
+.price{
+    width: 75px;
+    display: flex;
+    justify-content: space-between;
+}
+.normal-price{
+    color: red;
+}
+.sell{
+    color: #9d9a9a;
+}
+.photo-macbook{
+    width: 236px;
+}
+.line{
+    color: #f6f7f8;
+    width: 236px;
+    height: 1px;
+}
+.calculator__button{
+    background-color: #0A223D;
+    color: white;
+    width: 100px;
+    min-height: 39px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+}
+.calculator__input{
+    width: 200px;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 15px;
+    border: none;
+}

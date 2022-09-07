@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Iphone</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+</head>
+<body>
+<div th:insert="fragment/header :: defaultHeader"></div>
+<div class="page">
+    <div class="name">
+        <h1>Склад Iphone</h1>
+    </div>
+    <form  action="/Iphone/search" style="margin-bottom: 10px;">
+        <input name="title" id="title" placeholder="Точный поиск">
+        <input type="submit" value="Поиск">
+    </form>
+    <form  action="/Iphone/search">
+        <input name="title" id="title1" placeholder="Неточный поиск">
+        <input type="submit" value="Поиск">
+    </form>
+    <div >
+        <div class="mac">
+            <div th:each="el : ${iphones}" class="card">
+                <p th:text="${el.title}"></p>
+                <p th:text="${el.text}"></p>
+                <p th:text="${el.price}"></p>
+                <p th:text="${el.display}"></p>
+                <p th:text="${el.number}"></p>
+            </div>
+        </div>
+    </div>
+    <a href="/Iphone/addView">Добавить</a>
+</div>
+</body>
+</html>
