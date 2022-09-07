@@ -14,12 +14,12 @@
         <h1>Склад Iphone</h1>
     </div>
     <form  action="/Iphone/search" style="margin-bottom: 10px;">
-        <input name="title" id="title" placeholder="Точный поиск">
-        <input type="submit" value="Поиск">
+        <input class="calculator__input" name="title" id="title" placeholder="Точный поиск">
+        <input type="submit" value="Поиск" class="calculator__button">
     </form>
     <form  action="/Iphone/search">
-        <input name="title" id="title1" placeholder="Неточный поиск">
-        <input type="submit" value="Поиск">
+        <input class="calculator__input" name="title" id="title1" placeholder="Неточный поиск">
+        <input type="submit" value="Поиск" class="calculator__button">
     </form>
     <div >
         <div class="mac">
@@ -32,7 +32,8 @@
             </div>
         </div>
     </div>
-    <a href="/Iphone/addView">Добавить</a>
+    <a href="/Iphone/addView" class="btn btn-primary">Добавить</a>
 </div>
+<div th:insert="fragment/footer :: defaultFooter"></div>
 </body>
 </html>

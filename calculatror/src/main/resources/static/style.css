@@ -51,9 +51,6 @@ span{
 .sell{
     color: #9d9a9a;
 }
-.photo-macbook{
-    width: 236px;
-}
 .line{
     color: #f6f7f8;
     width: 236px;
@@ -76,4 +73,22 @@ span{
     margin-right: 10px;
     font-size: 15px;
     border: none;
+}
+.calculator__input_add{
+    width: 348px;
+    padding: 10px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border: none;
+}
+.calculator__button_add{
+    background-color: #0A223D;
+    color: white;
+    width: 348px;
+    min-height: 39px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
 }
